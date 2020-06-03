@@ -1,0 +1,10 @@
+{
+  "build": {
+    "mode": "production",
+    "outputDir": "dist",
+    "publicPath": "",
+    "optimizeImages": false,
+    "watch": false
+  },
+  "devServer": {}
+}

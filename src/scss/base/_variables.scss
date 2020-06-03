@@ -1,0 +1,51 @@
+// ============
+// Application variables
+// Please change according to designs
+// ============
+
+$color-black: #000;
+$color-white: #fff;
+$color-blue: #1F62E7;
+$color-red: #BF1E2E;
+$color-green: #056839;
+$color-orange: #FF3D00;
+$color-yellow: #FFB95D;
+$color-purple: #302C77;
+
+$font-family: 'Lato', sans-serif;
+$font-bold: 700;
+
+$color-primary: var(--primary);
+$z-index-modal-dialog: 1000;
+$z-index-loading: 999;
+$z-index-table-sticky-actions: 100;
+
+$header-height-desktop: 60px;
+$header-height-mobile: 60px;
+
+// ============
+// Bootstrap 4 variables
+// Please change according to designs
+// ============
+
+
+// $grid-gutter-width: 30px;
+// $grid-padding: $grid-gutter-width / 2;
+
+$grid-columns: 12;
+
+// default breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1025px,
+  xl: 1200px
+) !default;
+
+
+$breakpoint-xs: 0;
+$breakpoint-sm: map-get($grid-breakpoints, "sm");
+$breakpoint-md: map-get($grid-breakpoints, "md");
+$breakpoint-lg: map-get($grid-breakpoints, "lg");
+$breakpoint-xl: map-get($grid-breakpoints, "xl");

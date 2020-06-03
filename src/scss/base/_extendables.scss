@@ -1,0 +1,88 @@
+@import './mixins';
+
+// Responsive by devices
+@mixin mobile-small() {
+  @include breakpoint($max: 320px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @include breakpoint($max: $breakpoint-md - 1) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @include breakpoint($min: $breakpoint-md, $max: $breakpoint-lg - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-up() {
+  @include breakpoint($min: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin tablet-down() {
+  @include breakpoint($max: breakpoint-lg - 1) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @include breakpoint($min: breakpoint-lg) {
+    @content;
+  }
+}
+
+
+// resposive by Bootstrap
+@mixin absolute-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-middle() {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+@mixin absolute-fit() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin ratio-frame($ratio) {
+  position: relative;
+  height: 0;
+  padding-bottom: 100% / $ratio;
+}
+
+@mixin hover() {
+  @include desktop() {
+    &:active,
+    &:hover {
+      @content;
+    }
+  }
+  @include tablet-down() {
+    &:active {
+      @content;
+    }
+  }
+}
+
+
+@mixin firefox() {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}

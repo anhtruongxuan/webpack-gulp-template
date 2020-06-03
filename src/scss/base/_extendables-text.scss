@@ -1,0 +1,32 @@
+%font {
+  font-family: $font-family
+}
+
+%h1 {
+  font-size: 3rem;
+  line-height: 1.225;
+  font-weight: bold;
+
+  @include tablet-up() {
+    font-size: 4rem;
+  }
+}
+
+%h2 {
+  font-size: 2.4rem;
+  line-height: 1.2142;
+
+  @include tablet-up() {
+    font-size: 2.8rem;
+  }
+}
+
+%h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+%h4 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
