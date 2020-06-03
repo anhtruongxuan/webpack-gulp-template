@@ -1,0 +1,23 @@
+# Modules #
+###########
+node_modules
+npm_modules
+bower_components
+_webdata
+
+
+
+# OS generated files #
+######################
+.idea
+
+src/draggy/yarn\.lock
+
+/config/*.*
+!/config/default.json
+!/config/*-example.json
+!/config/index.js
+dist
+yarn.lock
+package-lock\.json
+temp

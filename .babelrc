@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "latest",
+    "stage-0",
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "es2015",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "syntax-dynamic-import",
+    "import-glob"
+  ]
+}
